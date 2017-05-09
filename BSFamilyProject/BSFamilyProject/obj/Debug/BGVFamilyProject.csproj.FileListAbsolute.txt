@@ -19,3 +19,13 @@ C:\Users\MaironAlfonso\Documents\Trabajo\BarberShop\BGVFamily\BSFamilyProject\BS
 C:\Users\MaironAlfonso\Documents\Trabajo\BarberShop\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.Properties.Resources.resources
 C:\Users\MaironAlfonso\Documents\Trabajo\BarberShop\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BGVFamilyProject.csproj.GenerateResource.Cache
 C:\Users\MaironAlfonso\Documents\Trabajo\BarberShop\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.Forms.Conta.resources
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\bin\Debug\BSFamilyProject.exe.config
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.exe
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.pdb
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BGVFamilyProject.csprojResolveAssemblyReference.cache
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.Main.resources
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.SignIn.resources
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BSFamilyProject.Properties.Resources.resources
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\obj\Debug\BGVFamilyProject.csproj.GenerateResource.Cache
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\bin\Debug\BSFamilyProject.exe
+C:\Users\Daniel Corrales\Documents\GitHub\BGVFamily\BSFamilyProject\BSFamilyProject\bin\Debug\BSFamilyProject.pdb
