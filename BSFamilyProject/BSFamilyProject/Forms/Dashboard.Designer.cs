@@ -42,10 +42,19 @@
             this.HeaderPanel = new System.Windows.Forms.Panel();
             this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.PositionLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ControlPanel = new System.Windows.Forms.Panel();
+            this.TabPanel = new System.Windows.Forms.Panel();
+            this.ClientAdmiBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.UpdateClientBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.BtnPanel.SuspendLayout();
             this.LogoPanel.SuspendLayout();
             this.HeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
+            this.ControlPanel.SuspendLayout();
+            this.TabPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnPanel
@@ -270,6 +279,7 @@
             this.ClientsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ClientsBtn.Textcolor = System.Drawing.Color.White;
             this.ClientsBtn.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientsBtn.Click += new System.EventHandler(this.ClientsBtn_Click);
             // 
             // DashboardBtn
             // 
@@ -304,6 +314,7 @@
             this.DashboardBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.DashboardBtn.Textcolor = System.Drawing.Color.White;
             this.DashboardBtn.TextFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
             // 
             // LogoPanel
             // 
@@ -363,6 +374,118 @@
             this.PositionLabel.TabIndex = 0;
             this.PositionLabel.Text = "Dashboard";
             // 
+            // ControlPanel
+            // 
+            this.ControlPanel.Controls.Add(this.label3);
+            this.ControlPanel.Controls.Add(this.label2);
+            this.ControlPanel.Controls.Add(this.TabPanel);
+            this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ControlPanel.Location = new System.Drawing.Point(182, 44);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Size = new System.Drawing.Size(677, 430);
+            this.ControlPanel.TabIndex = 2;
+            // 
+            // TabPanel
+            // 
+            this.TabPanel.Controls.Add(this.ClientAdmiBtn);
+            this.TabPanel.Controls.Add(this.UpdateClientBtn);
+            this.TabPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TabPanel.Location = new System.Drawing.Point(0, 0);
+            this.TabPanel.Name = "TabPanel";
+            this.TabPanel.Size = new System.Drawing.Size(677, 48);
+            this.TabPanel.TabIndex = 2;
+            // 
+            // ClientAdmiBtn
+            // 
+            this.ClientAdmiBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ClientAdmiBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ClientAdmiBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientAdmiBtn.BorderRadius = 0;
+            this.ClientAdmiBtn.ButtonText = "Agregar Clientes";
+            this.ClientAdmiBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClientAdmiBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.ClientAdmiBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.ClientAdmiBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("ClientAdmiBtn.Iconimage")));
+            this.ClientAdmiBtn.Iconimage_right = null;
+            this.ClientAdmiBtn.Iconimage_right_Selected = null;
+            this.ClientAdmiBtn.Iconimage_Selected = null;
+            this.ClientAdmiBtn.IconMarginLeft = 0;
+            this.ClientAdmiBtn.IconMarginRight = 0;
+            this.ClientAdmiBtn.IconRightVisible = true;
+            this.ClientAdmiBtn.IconRightZoom = 0D;
+            this.ClientAdmiBtn.IconVisible = true;
+            this.ClientAdmiBtn.IconZoom = 90D;
+            this.ClientAdmiBtn.IsTab = false;
+            this.ClientAdmiBtn.Location = new System.Drawing.Point(0, 0);
+            this.ClientAdmiBtn.Name = "ClientAdmiBtn";
+            this.ClientAdmiBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ClientAdmiBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ClientAdmiBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.ClientAdmiBtn.selected = false;
+            this.ClientAdmiBtn.Size = new System.Drawing.Size(165, 48);
+            this.ClientAdmiBtn.TabIndex = 0;
+            this.ClientAdmiBtn.Text = "Agregar Clientes";
+            this.ClientAdmiBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ClientAdmiBtn.Textcolor = System.Drawing.Color.White;
+            this.ClientAdmiBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientAdmiBtn.Click += new System.EventHandler(this.ClientAdmiBtn_Click);
+            // 
+            // UpdateClientBtn
+            // 
+            this.UpdateClientBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.UpdateClientBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.UpdateClientBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UpdateClientBtn.BorderRadius = 0;
+            this.UpdateClientBtn.ButtonText = "Actualizar Clientes";
+            this.UpdateClientBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpdateClientBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.UpdateClientBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.UpdateClientBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("UpdateClientBtn.Iconimage")));
+            this.UpdateClientBtn.Iconimage_right = null;
+            this.UpdateClientBtn.Iconimage_right_Selected = null;
+            this.UpdateClientBtn.Iconimage_Selected = null;
+            this.UpdateClientBtn.IconMarginLeft = 0;
+            this.UpdateClientBtn.IconMarginRight = 0;
+            this.UpdateClientBtn.IconRightVisible = true;
+            this.UpdateClientBtn.IconRightZoom = 0D;
+            this.UpdateClientBtn.IconVisible = true;
+            this.UpdateClientBtn.IconZoom = 90D;
+            this.UpdateClientBtn.IsTab = false;
+            this.UpdateClientBtn.Location = new System.Drawing.Point(164, 0);
+            this.UpdateClientBtn.Name = "UpdateClientBtn";
+            this.UpdateClientBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.UpdateClientBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.UpdateClientBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.UpdateClientBtn.selected = false;
+            this.UpdateClientBtn.Size = new System.Drawing.Size(165, 48);
+            this.UpdateClientBtn.TabIndex = 1;
+            this.UpdateClientBtn.Text = "Actualizar Clientes";
+            this.UpdateClientBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UpdateClientBtn.Textcolor = System.Drawing.Color.White;
+            this.UpdateClientBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateClientBtn.Click += new System.EventHandler(this.UpdateClientBtn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(183, 222);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(250, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Actualizado de clientes";
+            this.label3.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(183, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(232, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "agregado de clientes";
+            // 
             // Dashboard
             // 
             this.AccessibleName = "";
@@ -370,6 +493,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(859, 474);
+            this.Controls.Add(this.ControlPanel);
             this.Controls.Add(this.HeaderPanel);
             this.Controls.Add(this.BtnPanel);
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -383,6 +507,9 @@
             this.HeaderPanel.ResumeLayout(false);
             this.HeaderPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
+            this.ControlPanel.ResumeLayout(false);
+            this.ControlPanel.PerformLayout();
+            this.TabPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -402,5 +529,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel PositionLabel;
         private Bunifu.Framework.UI.BunifuImageButton CloseBtn;
         private Bunifu.Framework.UI.BunifuFlatButton CloseSessionBtn;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        public System.Windows.Forms.Panel ControlPanel;
+        public Bunifu.Framework.UI.BunifuFlatButton ClientAdmiBtn;
+        public Bunifu.Framework.UI.BunifuFlatButton UpdateClientBtn;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Panel TabPanel;
     }
 }

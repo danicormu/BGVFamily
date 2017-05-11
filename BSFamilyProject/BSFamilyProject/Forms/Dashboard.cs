@@ -15,6 +15,7 @@ namespace BSFamilyProject.Forms
         public Dashboard()
         {
             InitializeComponent();
+            ControlPanel.Hide();
         }
 
         private void LogoPanel_Paint(object sender, PaintEventArgs e)
@@ -38,5 +39,37 @@ namespace BSFamilyProject.Forms
             login.Show();
             this.Hide();
         }
+
+        private void ClientsBtn_Click(object sender, EventArgs e)
+        {
+            PositionLabel.Text = "Clientes";
+            TabPanel.Show();
+            ControlPanel.Show();
+        }
+
+        private void UpdateClientBtn_Click(object sender, EventArgs e)
+        {
+            label2.Hide();
+            label3.Show(); 
+        }
+
+        private void ClientAdmiBtn_Click(object sender, EventArgs e)
+        {
+            label3.Hide();
+            label2.Show();  
+        }
+
+        private void DashboardBtn_Click(object sender, EventArgs e)
+        {
+            TabPanel.Hide();
+            ControlPanel.Hide();
+            PositionLabel.Text = "Dashboard";
+        }
+
+        // metodos de control de controles XD
+
+
+
+
     }
 }
